@@ -1,0 +1,126 @@
+/* Basic styles for the curriculum page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    padding: 20px;
+    background-color: white;
+    text-align: left;
+    border-bottom: 1px solid lightgray;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+header nav {
+    text-align: right;
+}
+
+header nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: blue;
+}
+
+.blue-dot {
+    height: 10px;
+    width: 10px;
+    background-color: blue;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+main {
+    padding: 40px;
+    background-color: #f5f5f5;
+}
+
+.curriculum-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.curriculum-header h1 {
+    font-size: 32px;
+}
+
+.curriculum-header button {
+    background-color: #0056ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.experience {
+    background-color: #f2e6d9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.experience h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.experience-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.experience-item h3 {
+    font-size: 18px;
+    color: blue;
+}
+
+.experience-item p {
+    margin: 10px 0;
+}
+
+.experience-description {
+    font-size: 14px;
+    color: gray;
+}
+
+footer {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.contact-info {
+    margin-bottom: 10px;
+}
+
+.social-footer a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.social-footer a:hover {
+    color: blue;
+}
+
+footer p {
+    font-size: 12px;
+    color: gray;
+}
