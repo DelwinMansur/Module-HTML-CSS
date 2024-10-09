@@ -4,65 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Maya Nelson</title>
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="./css/contact.css">
 </head>
 <body>
     <header>
         <h1><span class="blue-space"></span>Maya Nelson / PROJECT MANAGER</h1>
         <nav>
-            <a href="#">ABOUT ME</a>
-            <a href="#">RESUME</a>
-            <a href="#">PROJECTS</a>
-            <a href="#">CONTACT</a>
+             <a href="index.html">ABOUT ME</a>
+            <a href="curriculum.html">RESUME</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="contact.html">CONTACT</a>
         </nav>
     </header>
 
     <main>
-        <div class="contact-header">
-            <h1><span class="blue-space"></span>LETS TALK</h1>
-        </div>
+        <!-- Contact Form Section -->
+    <section class="contact-section">
+        <h2><span class="blue-dot"></span> Let's talk</h2>
 
-        <section class="contact-form">
-            <form action="#" method="POST">
+        <form class="contact-form">
+            <div class="form-row">
                 <div class="form-group">
-                    <label for="name">name *</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="surname">surname *</label>
-                    <input type="text" id="surname" name="surname" required>
+                    <label for="first-name">First Name *</label>
+                    <input type="text" id="first-name" required>
                 </div>
-
                 <div class="form-group">
-                    <label for="email">Email *</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="last-name">Last Name *</label>
+                    <input type="text" id="last-name" required>
                 </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message"></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </section>
 
-                <div class="form-group">
-                    <label for="body">body</label>
-                    <input type="text" id="body" name="body">
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5"></textarea>
-                </div>
-
-                <button type="submit">SEND</button>
-            </form>
-        </section>
+</body>
+</html>
     </main>
 
     <footer>
+        <div class="copyright-content">
+            <p>Privacy Policy</p>
+            <p class="copyright">© 2035 Created by Maya Nelon with Wix.com</p>
+        </div>
         <div class="contact-info">
-            <p>Llama: +52-1-33-12345678</p>
-            <p>Escribe: info@misitio.com</p>
+            <div>
+                <p><strong>Call:</strong></p>
+                <p>+52-1-33-12345678</p>
+            </div>
+            <div>
+                <p><strong>Write me:</strong></p>
+                <p>info@misitio.com</p>
+            </div>
             <div class="social-footer">
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">Instagram</a>
+                <p><strong>Follow me:</strong></p>
+                <div>
+                    <a href="#"><img src="./pictures/facebook.webp" alt="Facebook"></a>
+                    <a href="#"><img src="./pictures/twitter.webp" alt="Twitter"></a>
+                    <a href="#"><img src="./pictures/linkedin.webp" alt="LinkedIn"></a>
+                    <a href="#"><img src="./pictures/instagram.webp" alt="Instagram"></a>
+                </div>
             </div>
         </div>
-        <p class="copyright">© 2035 Creado por Maya Nares con Wix.com</p>
     </footer>
 </body>
 </html>

@@ -18,6 +18,21 @@ header h1 {
     margin: 0;
 }
 
+header nav {
+    text-align: right;
+}
+
+header nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: blue;
+}
+
 .blue-space {
     height: 10px;
     width: 10px;
@@ -29,34 +44,54 @@ header h1 {
 
 .profile-section {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 40px;
-    background-color: #f5f5f5;
+    z-index: 2;
 }
 
 .profile-card {
     text-align: center;
-    background-color: #f2e6d9;
-    padding: 20px;
-    border-radius: 10px;
-    width: 250px;
+    background-color: #F4ECE6;
+    padding-top: 20px;
+    width: 350px;
+    box-shadow: -12px 12px 12px #4545453a;
+}
+
+.background-element {
+    background-color: #E6DACD;
+    width: 40%;
+    height: 532px;
+    position: absolute;
+    z-index: -1;
 }
 
 .profile-image {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
 
 .profile-card h2 {
-    font-size: 20px;
+    font-size: 32px;
+}
+
+.profile-card p {
+    margin: 26px;
+}
+
+.line {
+    width: 40px;
+    border: 1px solid blue;
+    margin: auto;
 }
 
 .social-icons {
     display: flex;
     justify-content: space-around;
     padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
 }
 
 .info-section {
@@ -65,8 +100,12 @@ header h1 {
 }
 
 .info-section h1 {
-    font-size: 48px;
+    font-size: 80px;
     margin: 0;
+}
+
+.info-section p {
+    font-size: 20px;
 }
 
 .buttons {
@@ -74,14 +113,43 @@ header h1 {
 }
 
 .buttons button {
-    background-color: #0056ff;
-    color: white;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     margin-right: 10px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+button.primary {
+    background-color: #0056ff;
+    color: white;
+    border: 2px solid #0056ff;
+}
+
+button.secondary {
+    background-color: #ffffff;
+    color: #202020;
+    border: 2px solid #202020;
+}
+
+button.primary:hover {
+    background-color: #ffffff;
+    color: #202020;
+    border: 2px solid #0056ff;
+}
+
+button.secondary {
+    background-color: #ffffff;
+    color: #202020;
+    border: 2px solid #202020;
+}
+
+button.secondary:hover {
+    background-color: #0056ff;
+    color: #ffffff;
+    border: 2px solid #0056ff;
 }
 
 .description {
@@ -93,10 +161,17 @@ footer {
     text-align: center;
     background-color: #f5f5f5;
     padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .contact-info {
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 500px;
 }
 
 .social-footer a {
@@ -112,4 +187,8 @@ footer {
 footer p {
     font-size: 12px;
     color: gray;
+}
+
+footer p strong {
+    color: #202020;
 }
