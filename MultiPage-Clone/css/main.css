@@ -7,26 +7,35 @@ body {
 }
 
 header {
-    padding: 20px;
+    padding: 40px;
     background-color: white;
     text-align: left;
     border-bottom: 1px solid lightgray;
+    display: flex;
 }
 
 header h1 {
     font-size: 24px;
+    width: 50%;
     margin: 0;
+    font-weight: bolder;
 }
 
 header nav {
     text-align: right;
+    width: 50%;
+    margin-top: auto;
 }
 
 header nav a {
     margin-left: 20px;
     text-decoration: none;
     color: black;
-    font-weight: bold;
+    transition: 0.5s;
+}
+
+header nav a.active {
+    color: blue;
 }
 
 header nav a:hover {
@@ -34,12 +43,12 @@ header nav a:hover {
 }
 
 .blue-space {
-    height: 10px;
-    width: 10px;
+    height: 12px;
+    width: 12px;
     background-color: blue;
     display: inline-block;
-    border-radius: 50%;
     margin-right: 8px;
+    margin-bottom: 2px;
 }
 
 .profile-section {

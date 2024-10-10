@@ -3,7 +3,6 @@ body {
     background-color: #e9d9ca; /* Light beige background */
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 100;
 }
 
 h1, h2, h3 {
@@ -14,6 +13,7 @@ h2 {
     font-size: 24px;
     font-weight: bold;
     color: #000;
+    margin-bottom: 24px;
 }
 
 p {
@@ -23,68 +23,95 @@ p {
 
 /* Header Styles */
 header {
-    background-color: #eef0f3; /* Blue navbar background */
-    color: white;
-    padding: 20px;
-}
-
-.header-container {
+    padding: 40px;
+    background-color: white;
+    text-align: left;
+    border-bottom: 1px solid lightgray;
     display: flex;
-    justify-content: space-between; /* Space between the two sides */
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
-.header-container h1 {
+header h1 {
+    font-size: 24px;
+    width: 50%;
     margin: 0;
-    font-size: 28px;
-    
-}
-
-nav {
-    display: flex;
-    gap: 20px; /* Even spacing between links */
+    font-weight: bolder;
 }
 
 header nav {
     text-align: right;
+    width: 50%;
+    margin-top: auto;
 }
 
 header nav a {
     margin-left: 20px;
     text-decoration: none;
     color: black;
-    font-weight: bold;
+    transition: 0.5s;
+}
+
+header nav a.active {
+    color: blue;
 }
 
 header nav a:hover {
     color: blue;
 }
 
-nav a:hover {
-    color: #ffcc00; /* Yellow on hover */
+.blue-space {
+    height: 12px;
+    width: 12px;
+    background-color: blue;
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 3px;
 }
 
 /* Experience and Skillset Layout */
+
+.content {
+    margin: auto;
+    max-width: 750px;
+}
+
+.resume-header {
+    text-align: center;
+    margin-top: 48px;
+}
+
 .experience {
-    margin: 50px;
+    margin: 64px;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
 }
 
 .experience-item {
     display: flex;
     justify-content: space-between;
     background-color: #fff;
-    padding: 20px;
+    padding: 32px;
     border-radius: 0px;
     margin-bottom: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
-    limit max-width: border: ;
 }
-  
-.box {
-    width: 735px;
+
+.skills h2 {
+    margin-top: 36px;
 }
+
+.items {
+    display: flex;
+}
+
+.item-childs {
+    flex-direction: column;
+    display: flex;
+    margin-right: 24px;
+}
+
 
 .left-column {
     width: 40%; /* Left side taking 40% */
@@ -105,7 +132,7 @@ button {
     color: #fff;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     font-weight: bold;
     text-transform: uppercase;

@@ -7,43 +7,52 @@ body {
 }
 
 header {
+    padding: 40px;
+    background-color: white;
+    text-align: left;
+    border-bottom: 1px solid lightgray;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     font-size: 24px;
-    font-weight: bold;
-    color: #000000;
+    width: 50%;
+    margin: 0;
+    font-weight: bolder;
 }
 
-header .blue-dot {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background-color: #0056FF;
-    border-radius: 50%;
-    margin-right: 10px;
+header nav {
+    text-align: right;
+    width: 50%;
+    margin-top: auto;
 }
 
 header nav a {
     margin-left: 20px;
-    color: #0056FF;
     text-decoration: none;
-    font-weight: bold;
+    color: black;
+    transition: 0.5s;
+}
+
+header nav a.active {
+    color: blue;
 }
 
 header nav a:hover {
-    text-decoration: underline;
+    color: blue;
+}
+
+.blue-space {
+    height: 12px;
+    width: 12px;
+    background-color: blue;
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 2px;
 }
 
 /* Contact Form Section */
 .contact-section {
-    text-align: center;
     padding: 60px 20px;
 }
 
@@ -54,15 +63,6 @@ header nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.contact-section .blue-dot {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background-color: #0056FF;
-    border-radius: 50%;
-    margin-right: 10px;
 }
 
 /* Contact Form Styling */
@@ -80,8 +80,11 @@ header nav a:hover {
     justify-content: space-between;
 }
 
+.form-row .form-group {
+    width: calc(50% - 20px);
+}
+
 .form-group {
-    width: 48%;
     margin-bottom: 20px;
 }
 
@@ -93,10 +96,21 @@ header nav a:hover {
 
 .form-group input, 
 .form-group textarea {
-    width: 100%;
+    width: calc(100% - 20px);
     padding: 10px;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    transition: 0.5s;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-bottom: 2px solid blue;
+}
+
+.form-group input {
+    height: 24px;
 }
 
 textarea {
@@ -108,7 +122,7 @@ button {
     color: #ffffff;
     padding: 12px 30px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     font-weight: bold;
     text-transform: uppercase;
